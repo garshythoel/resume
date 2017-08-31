@@ -1,0 +1,198 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Friggeri Resume/CV
+% XeLaTeX Template
+% Version 1.2 (3/5/15)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Adrien Friggeri (adrien@friggeri.net)
+% https://github.com/afriggeri/CV
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important notes:
+% This template needs to be compiled with XeLaTeX and the bibliography, if used,
+% needs to be compiled with biber rather than bibtex.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[print]{friggeri-cv} % Add 'print' as an option into the square bracket to remove colors from this template for printing
+
+\addbibresource{bibliography.bib} % Specify the bibliography file to include publications
+
+\begin{document}
+
+\header{harshyt}{goel}{web infrastructure engineer} % Your name and current job title/field
+
+%----------------------------------------------------------------------------------------
+%	SIDEBAR SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{aside} % In the aside, each new line forces a line break
+\section{about}
+249 Oak Street
+San Francisco, CA 
+~
+(650) 237 9337
+\href{mailto:harshyt.goel@gmail.com}{harshyt.goel@gmail.com}
+\href{https://www.linkedin.com/in/harshyt}{linkedin.com/in/harshyt}
+\section{programming}
+PHP
+Hack/PHP
+C++
+Node/JS
+CSS
+HTML5
+\section{languages}
+english bilingual
+hindi bilingual
+german limited proficiency
+\end{aside}
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+\section{summary}
+An experienced learner and programmer. My approach to tackling new challenges and prob- lems in general is to immerse myself in them, figure out the variables involved and iteratively build to a solution. Enjoy working with server infrastructure and API design along with frequent projects in frontend and backend land.
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{experience}
+\begin{entrylist}
+%------------------------------------------------
+\entry
+{2015--2017}
+{FACEBOOK INC.}
+{Menlo Park, California}
+{\emph{Software Engineer} \\
+Built out the web infrastructure for several Facebook Messenger products. Major projects include:
+
+\begin{itemize}
+\item Building a messenger thread/profile deep-linking framework for the m.me/{username} scheme with a suitable fallback mechanism on both Desktop and Mobile for messenger. Used extensively by businesses for B2C communication with ~500 Million hits/Day.
+\item Implementing cross platform C++ services which create/encode unique Messenger Codes (Messenger's QR code equivalent) for Users/Businesses and conversely scan/identify/decode the same.
+\begin{itemize}
+\item Also created relevant APIs and endpoints for the Mobile Clients along with integrating the server caching/storage infrastructure.
+\end{itemize}
+\item Revamped the Facebook Messages Inbox to resemble the Messenger.com interface.
+\item Implemented a thorough system to check consistency of Messenger User Contacts across the stack that allows devs to track unexplained losses/additions of Contacts across the various backend layers to the client. Built a robust backbone for future alerting and integrity fixer systems to be built on top.
+\item Implemented comprehensive funnel logging for Messenger Search which allowed quantifiable search performance tracking. This data has allowed Messenger to goal against relevant metrics and improve search performance leading to a decrease in failed searches by 3\%.
+\item Extensive work with creating/modifying/maintaining complex GraphQL + EntSchema(Facebook's internal object relationship mapping layer) architectures and provisioning a plethora of endpoints for clients.
+\end{itemize}}
+
+%------------------------------------------------
+\entry
+{2014--2014}
+{FACEBOOK INC.}
+{Menlo Park, California}
+{\emph{Software Engineering Intern (3 mos)} \\
+Worked on the Ads Infrastructure team. Primarily on the caching system which loads all Ad units from local databases into Memcache.
+
+\begin{itemize}
+\item Myprojectinvolvedimplementingamajorrewriteofthetaskmanagement system to remove dependencies on Zookeeper abstractions and configs and allow Tupperware to handle jobs statically. This allowed for major improvements in efficiency and concurrency.
+\item The subsequent parallelization of Ad unit loading tasks led to an average of 25\% reduction of Total Time taken for a job across all Data Centers.
+\item Switching the scheduling mechanism led to the reduction of On Run De-
+lays by approx. 60\%
+\end{itemize}}
+
+\end{entrylist}
+\begin{entrylist}
+%------------------------------------------------
+\entry
+{2013--2013}
+{Universität Bremen}
+{Bremen, Germany}
+{\emph{Research Assistant (3 mos)} \\
+Worked on Model-based optimal multi-variable control and optimum controller parameterization for air systems of passenger car diesel engines.
+
+\begin{itemize}
+\item Implemented the Mathematical Model of the Air system consisting of a system of ODE’s in C++ by using suitable techniques for Discretization , Interpolation and Simulation.
+\item Calculated an Optimal Control for the system using TransWORHP (In-House Toolbox) and achieved lower exhaust emissions without any significant drops in power.
+\end{itemize}}
+
+%------------------------------------------------
+\entry
+{2012--2012}
+{Indian School of Business}
+{Hyderabad, India}
+{\emph{Research Assistant (3 mos)} \\
+Worked on an Operations Research problem focused on optimizing cab placements throughout a city for maximum revenue and minimum churn.
+
+\begin{itemize}
+\item Developed a mathematical model to maximize the revenue using linear and non-linear objective functions by relocation of taxis based on predicted customer demand.
+\item Achieved an increase in revenue up to 16\% by the use of Queuing Theory (M/M/s/N models) to model loss of customers.
+\end{itemize}}
+
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	PROJECTS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{projects}
+\begin{entrylist}
+
+%------------------------------------------------
+\entry
+{2017--Now}
+{Building a scalable url link shortener in Node.js}
+{San Francisco, CA}
+{ \emph{Side Project: \href{https://github.com/garshythoel/tiny-newrl}{github.com/garshythoel/tiny-newrl}} \\
+Started building a scalable link shortening service in an attempt to learn JavaScript and NodeJS. This helped me go from not knowing Javascript/Node frameworks to writing a locally hosted server integrated with a Database/Caching and an ORM.}
+
+\entry
+{2016--2017}
+{Riffshop Academy}
+{San Francisco, CA}
+{ \emph{Co-Founder} \\
+An online portal focused on teaching musicians heavy metal song-writing.
+\begin{itemize}
+\item Used a combination of growth hacking strategies and community building to amass a loyal combined audience of 50k accross various platforms.
+\item Built browser based scripts to automate Facebook growth and Reddit visibility
+\item Studied common traits of video virality and implemented them effectively
+resulting in multiple videos with millions of views. This resulted in
+\begin{itemize}
+\item Advertising deals with known brands such as Dollar Shave Club, CB3 Audio, IGN and others.
+\item A successful 1-week merchandising trial run which resulted in a profit of nearly 3000\$
+\end{itemize}
+\item I learnt to analyze an Audience, get a feel for their emotional hooks and
+create relatable content while growing the brand with the reputation as a legitimate musical learning and entertainment resource.
+\end{itemize}}
+
+%------------------------------------------------
+
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{education}
+
+\begin{entrylist}
+
+%------------------------------------------------
+
+\entry
+{2013--2015}
+{Master {\normalfont of Science}}
+{Indian Institute of Technology, Kharagpur}
+{Specialization in Mathematics and Computing (Cryptography)}
+
+%------------------------------------------------
+
+\entry
+{2010--2013}
+{Bachelor {\normalfont of Science}}
+{Indian Institute of Technology, Kharagpur}
+{Specialization in Mathematics and Computing}
+
+%------------------------------------------------
+
+\end{entrylist}
+
+\end{document}
